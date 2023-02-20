@@ -19,8 +19,8 @@ function Experience(props) {
   // console.log(nodes.Object_2.geometry);
   // Animate gradient
   useFrame((state) => {
-    const sin = Math.sin(state.clock.elapsedTime / 2);
-    const cos = Math.cos(state.clock.elapsedTime / 2);
+    const sin = Math.sin(state.clock.elapsedTime / 1.5);
+    const cos = Math.cos(state.clock.elapsedTime / 1.5);
     ref.current.layers[0].origin.set(cos / 2, 0, 0);
     ref.current.layers[1].origin.set(cos, sin, cos);
     ref.current.layers[2].origin.set(sin, cos, sin);
@@ -56,8 +56,8 @@ function Experience(props) {
               colorB="#f7b955"
               alpha={1}
               mode="add"
-              near={3 * gradient}
-              far={3}
+              near={3.5 * gradient}
+              far={3.5}
               origin={[0, 1, 1]}
             />
             <Depth
@@ -65,8 +65,8 @@ function Experience(props) {
               colorB="#f7b955"
               alpha={1}
               mode="add"
-              near={4 * gradient}
-              far={4}
+              near={3.5 * gradient}
+              far={3.5}
               origin={[2, 2, -5]}
             />
             <Depth
