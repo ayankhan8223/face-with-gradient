@@ -6,6 +6,7 @@ import { LayerMaterial, Depth, Fresnel } from "lamina";
 import { useControls } from "leva";
 import { OrbitControls } from "@react-three/drei";
 import { MeshReflectorMaterial, Environment } from "@react-three/drei";
+import { Interactive, XR, ARButton, Controllers } from "@react-three/xr";
 
 function Experience(props) {
   const ref = useRef();
